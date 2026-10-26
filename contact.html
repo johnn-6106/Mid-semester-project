@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact | John Hendry Shangali</title>
+  <meta name="description" content="Contact John Hendry Shangali.">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;800&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">John<span>Shangali</span></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+              data-bs-target="#nav" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="nav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+          <li class="nav-item"><a class="nav-link active" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ===== PAGE TITLE ===== -->
+  <header class="page-head">
+    <div class="container">
+      <h1>Contact</h1>
+      <p class="mb-0">Questions, internships or just hello? I read every message.</p>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="container">
+        <div class="row g-5">
+
+          <!-- ===== CONTACT DETAILS + MAP ===== -->
+          <div class="col-lg-5">
+            <h2 class="h4">Contact details</h2>
+            <ul class="list-unstyled fs-6">
+              <li class="mb-3"><i class="bi bi-envelope text-success me-2"></i>
+                <a href="mailto:henry@gmail.com">henry@gmail.com</a></li>
+              <li class="mb-3"><i class="bi bi-telephone text-success me-2"></i>
+                <a href="tel:+255682640061">068 264 0061</a></li>
+              <li class="mb-3"><i class="bi bi-geo-alt text-success me-2"></i>
+                Your University, Your City</li>
+              <li class="mb-3"><i class="bi bi-linkedin text-success me-2"></i>
+                <a href="https://linkedin.com/in/yourusername">linkedin.com/in/yourusername</a></li>
+              <li><i class="bi bi-github text-success me-2"></i>
+                <a href="https://github.com/yourusername">github.com/yourusername</a></li>
+            </ul>
+
+            <div class="ratio ratio-4x3 rounded-4 overflow-hidden shadow-sm mt-4">
+              <iframe title="Map of campus" loading="lazy"
+                src="https://www.openstreetmap.org/export/embed.html?bbox=-0.13%2C51.50%2C-0.10%2C51.52&amp;layer=mapnik"></iframe>
+            </div>
+          </div>
+
+          <!-- ===== CONTACT FORM ===== -->
+          <div class="col-lg-7">
+            <h2 class="h4">Send a message</h2>
+            <div id="sent" class="alert alert-success d-none" role="alert">
+              Message sent. I'll reply within two working days.
+            </div>
+
+            <form id="contactForm" class="needs-validation" novalidate>
+              <div class="mb-3">
+                <label for="name" class="form-label">Full name</label>
+                <input id="name" type="text" class="form-control" autocomplete="name" required>
+                <div class="invalid-feedback">Enter your name.</div>
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label">Email address</label>
+                <input id="email" type="email" class="form-control" autocomplete="email" required>
+                <div class="invalid-feedback">Enter a valid email address.</div>
+              </div>
+              <div class="mb-3">
+                <label for="subject" class="form-label">Subject</label>
+                <input id="subject" type="text" class="form-control" required>
+                <div class="invalid-feedback">Add a subject.</div>
+              </div>
+              <div class="mb-3">
+                <label for="msg" class="form-label">Message</label>
+                <textarea id="msg" rows="5" class="form-control" required></textarea>
+                <div class="invalid-feedback">Write your message.</div>
+              </div>
+              <button class="btn btn-accent btn-lg" type="submit">Send message</button>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-md-5">
+          <h5 class="text-white">John Hendry Shangali</h5>
+          <p>Bachelor of Business Computing student aiming to become a project manager.</p>
+        </div>
+        <div class="col-md-3">
+          <h6 class="text-white">Pages</h6>
+          <ul class="list-unstyled">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+      <hr class="border-secondary mt-4">
+      <p class="small mb-0 text-center">&copy; 2026 John Hendry Shangali. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
